@@ -3,6 +3,17 @@
   color: var(--white-color);
 }
 
+.arrow-up {
+  /* position: absolute; */
+  width: 0;
+  height: 0;
+  top: -8px;
+  right: 30px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
 .main {
 }
 
@@ -27,7 +38,9 @@
   position: relative;
 }
 
-.nav__item--hidden:hover .header__qr {
+/* Show QR */
+/* Khi hover thẻ li có con là .header__qr thì  sẽ hiện css */
+.nav__item--show:hover .header__qr {
   display: block;
 }
 
@@ -83,16 +96,32 @@
   margin: 0 4px;
 }
 
-/* Header QR code */
-.header__qr {
-  width: 160px;
+/* ==== Header QR code ==== */
+.header__qr,
+.header__notify {
   background-color: var(--white-color);
   border-radius: 5px;
   box-shadow: 0 8px 8px rgba(0, 0, 0, 0.08);
   position: absolute;
-  left: 0;
-  top: 100%;
+  top: 140%;
+  animation: fadeIn ease-in 0.3s;
   display: none;
+}
+
+.header__qr {
+  width: 160px;
+  left: 0;
+}
+
+/* Tạo cầu nối cho con của thẻ li để có thể hover */
+.header__qr::before {
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  top: -16px;
+  left: 0;
+  content: "";
+  display: block;
 }
 
 .header__qr-img {
@@ -108,4 +137,35 @@
 
 .header__qr--github-img {
   height: 55px;
+}
+
+/* ==== Header Notify ==== */
+.header__notify {
+  right: 0;
+  width: 404px;
+}
+
+.header__notify-top {
+  width: 40px;
+}
+
+.header__notify-lists {
+}
+
+.header__notify-item {
+}
+
+.header__notify-link {
+}
+
+.header__notify-img {
+}
+
+.header__notify-info {
+}
+
+.header__notify-name {
+}
+
+.header__notify-desc {
 }
