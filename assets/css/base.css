@@ -1,0 +1,36 @@
+:root {
+  --white-color: #fff;
+  --back-color: #000;
+  --text-color: #333;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  /* <==== HACK ====> */
+  /* Ex: 1rem = 10px; 1.2rem = 12px; 1.8rem = 18px */
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/* <==== Responsive ====> */
+.grid {
+  width: 1400px;
+  /* Với những màn hình nhỏ hơn 1200px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
+  max-width: 100%;
+  /* Căn giữa */
+  margin: 0 auto;
+}
+
+.grid__full-width {
+  width: 100%;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
