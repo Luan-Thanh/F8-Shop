@@ -25,7 +25,13 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <title>F8 Shop</title>
+    <link
+      rel="icon"
+      href="./assets/img/Logo/logo_github.png"
+      type="image/gif"
+      sizes="100x100"
+    />
+    <title>Github Shop</title>
   </head>
   <body>
     <div class="main">
@@ -35,26 +41,60 @@
           <nav class="nav">
             <ul class="nav__lists">
               <!-- Separate: Phân cách -->
-              <li class="nav__item nav--separate">Vào cửa hàng ứng dụng F8</li>
+              <li
+                class="
+                  nav__item nav__item--hidden nav--separate nav__item--bold
+                "
+              >
+                Download source code!
+
+                <!-- ==== Header QR ==== -->
+                <div class="header__qr">
+                  <img
+                    src="./assets/img/QR/qrcode.png"
+                    alt="QR Code"
+                    class="header__qr-img"
+                  />
+                  <div class="header__qr--github">
+                    <a
+                      href="https://github.com/"
+                      class="header__qr--github-link"
+                    >
+                      <img
+                        src="./assets/img/Github/GitHub.jpg"
+                        alt="GitHub"
+                        class="header__qr--github-img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
               <li class="nav__item">
-                Kết nối
-                <a href="" class="nav-icon">
-                  <i class="fab fa-facebook"></i>
+                <span class="btn--no-hover">Kết nối</span>
+                <a
+                  href="https://www.facebook.com/luan.thanh.2203"
+                  class="nav__icon-link"
+                >
+                  <i class="nav__icon fab fa-facebook"></i>
                 </a>
                 <a
                   href="https://github.com/Luan-Thanh/F8-Shop"
-                  class="nav-icon"
+                  class="nav__icon-link"
                 >
-                  <i class="fab fa-github"></i>
+                  <i class="nav__icon fab fa-github"></i>
                 </a>
               </li>
             </ul>
             <ul class="nav__lists">
               <li class="nav__item">
-                <a href="" class="nav__item-link">Thông Báo</a>
+                <a href="" class="nav__item-link">
+                  <i class="nav__icon far fa-bell"></i>Thông Báo</a
+                >
               </li>
               <li class="nav__item">
-                <a href="" class="nav__item-link">Trợ Giúp</a>
+                <a href="" class="nav__item-link">
+                  <i class="nav__icon far fa-question-circle"></i>Trợ Giúp</a
+                >
               </li>
               <li class="nav__item nav__item--bold nav--separate">Đăng Ký</li>
               <li class="nav__item nav__item--bold">Đăng Nhập</li>
