@@ -39,7 +39,7 @@ html {
 
 /* <==== Responsive ====> */
 .grid {
-  width: 1500px;
+  width: 100px;
   /* Với những màn hình nhỏ hơn 1200px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
   max-width: 100%;
   /* Căn giữa */
