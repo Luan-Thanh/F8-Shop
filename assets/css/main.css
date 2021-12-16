@@ -8,7 +8,7 @@
 
 .header {
   height: 120px;
-  background-image: linear-gradient(180deg, #000, #1a1818);
+  background-image: linear-gradient(0, #000, #272b33);
   /* border: 1px solid #fff; */
 }
 /* <==== Navbar ====> */
@@ -72,8 +72,6 @@
 .nav__item,
 .nav__icon-link,
 .nav__item-link {
-  display: inline-flex;
-  align-items: center;
 }
 
 .nav__item--bold {
@@ -93,11 +91,11 @@
 /* ==== Header QR code ==== */
 .header__qr,
 .header__notify {
-  background-color: var(--white-color);
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   position: absolute;
   top: 150%;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
   animation: fadeIn ease-in 0.4s;
   display: none;
 }
@@ -143,14 +141,16 @@
   /* Thay đổi tâm */
   transform-origin: calc(100% - 20px) top;
   animation: notifyGrowth ease-in 0.3s;
+  /* Khai báo */
+  will-change: opacity, transform;
 }
 
 .header__notify::after {
   content: "";
+  position: absolute;
   border-style: solid;
   border-width: 12px 16px;
   border-color: transparent transparent #fff transparent;
-  position: absolute;
   top: -2rem;
   right: 1.2rem;
 }
@@ -166,7 +166,6 @@
     transform: scale(1);
   }
 }
-
 .header__notify-top {
   height: 40px;
   /* Lỗi ^.^ */
@@ -182,10 +181,10 @@
 }
 
 .header__notify-lists {
-  list-style: none;
-  padding-left: 0;
-  overflow: auto;
   height: 300px;
+  padding-left: 0;
+  list-style: none;
+  overflow: auto;
 }
 
 .header__notify-item {
@@ -202,9 +201,9 @@
 }
 
 .header__notify-link {
-  display: flex;
-  text-decoration: none;
   padding: 16px;
+  text-decoration: none;
+  display: flex;
 }
 
 .header__notify-img {
@@ -218,26 +217,26 @@
 }
 
 .header__notify-name {
-  display: block;
   font-size: 1.4rem;
   font-weight: 500;
   margin-bottom: 4px;
+  display: block;
 }
 
 .header__notify-desc {
-  display: block;
   font-size: 1.2rem;
   text-align: justify;
   opacity: 0.6;
+  display: block;
 }
 
 .header__notify-bottom {
+  /* Lỗi ^.^ */
+  margin: 0 32px;
+  padding: 16px;
+  border-top: 2px solid #000;
   text-align: center;
   font-weight: 400;
-  /* Lỗi ^.^ */
-  padding: 16px;
-  margin: 0 32px;
-  border-top: 2px solid #000;
 }
 
 .header__notify-bottom-btn {

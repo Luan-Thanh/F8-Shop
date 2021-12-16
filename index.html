@@ -19,12 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
-    />
+    /> -->
     <link
       rel="icon"
       href="./assets/img/Logo/logo_github.png"
@@ -71,13 +71,19 @@
                   href="https://www.facebook.com/luan.thanh.2203"
                   class="nav__icon-link"
                 >
-                  <i class="nav__icon fab fa-facebook"></i>
+                  <span
+                    class="nav__icon iconify"
+                    data-icon="akar-icons:facebook-fill"
+                  ></span>
                 </a>
                 <a
                   href="https://github.com/Luan-Thanh/Github-Shop"
                   class="nav__icon-link"
                 >
-                  <i class="nav__icon fab fa-github"></i>
+                  <span
+                    class="nav__icon iconify"
+                    data-icon="bytesize:github"
+                  ></span>
                 </a>
               </li>
             </ul>
@@ -266,5 +272,139 @@
       <!-- <==== Footer ====> -->
       <footer class="footer"></footer>
     </div>
+
+    <!-- <==== Modal ====> -->
+    <div class="modal">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__body">
+        <div class="modal__inner">
+          <!-- ==== Authen form ====-->
+          <div class="auth-form">
+            <!-- Đăng ký -->
+            <div class="auth-form__container">
+              <header class="auth-form__header">
+                <span
+                  class="iconify auth-form--logo"
+                  data-icon="octicon:mark-github-16"
+                ></span>
+
+                <h3 class="auth-form__heading">Đăng Ký Vào GitHub Shop</h3>
+
+                <span
+                  class="auth-form--close iconify"
+                  data-icon="eva:close-fill"
+                ></span>
+              </header>
+
+              <form action="" class="auth-form__form">
+                <div class="auth-form__group">
+                  <input
+                    type="email"
+                    class="auth-form__input"
+                    required
+                    placeholder=" "
+                  />
+
+                  <label for="auth-form--email" class="auth-form__label">
+                    Nhập địa chỉ email của bạn
+                  </label>
+                </div>
+
+                <div class="auth-form__group">
+                  <input
+                    type="password"
+                    required
+                    class="auth-form__input"
+                    placeholder=" "
+                  />
+
+                  <label for="auth-form--password" class="auth-form__label">
+                    Tạo một mật khẩu
+                  </label>
+                </div>
+
+                <div class="auth-form__group">
+                  <input
+                    type="text"
+                    name="username"
+                    required
+                    class="auth-form__input"
+                    placeholder=" "
+                  />
+
+                  <label for="auth-form__quantity" class="auth-form__label">
+                    Nhập tên người dùng
+                  </label>
+                </div>
+                <button class="btn btn--primary">Đăng Ký</button>
+              </form>
+              <div class="auth-form__policy">
+                <p class="auth-form__desc nav--separate">
+                  Bạn đã có tài khoản?
+                  <span
+                    ><a href="" class="auth-form__switch-btn">
+                      Đăng Nhập</a
+                    ></span
+                  >
+                </p>
+              </div>
+
+              <div class="auth-form__aside">
+                <ul class="auth-form__aside-list">
+                  <li class="auth-form__aside-item">
+                    <a
+                      href="https://docs.github.com/en/github/site-policy/github-terms-of-service"
+                      class="auth-form__aside-link"
+                      >Điều kiện
+                    </a>
+                  </li>
+
+                  <li class="auth-form__aside-item">
+                    <a
+                      href="https://docs.github.com/en/github/site-policy/github-privacy-statement"
+                      class="auth-form__aside-link"
+                      >Sự riêng tư</a
+                    >
+                  </li>
+
+                  <li class="auth-form__aside-item">
+                    <a
+                      href="https://github.com/security"
+                      class="auth-form__aside-link"
+                      >Bảo vệ</a
+                    >
+                  </li>
+
+                  <li class="auth-form__aside-item">
+                    <a
+                      href="https://www.facebook.com/luan.thanh.2203"
+                      class="auth-form__aside-link back-color"
+                      >Liên hệ với GitHub Shop</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="auth-form__socials">
+              <a href="" required class="btn btn--width-icon">
+                <span class="iconify" data-icon="entypo-social:facebook"></span>
+                Kết nối với Facebook
+              </a>
+
+              <a href="" required class="btn btn--width-icon">
+                <span
+                  class="iconify"
+                  data-icon="flat-color-icons:google"
+                ></span>
+                Kết nối với Google
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
 </html>
