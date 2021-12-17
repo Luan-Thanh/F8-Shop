@@ -443,7 +443,7 @@
 .header__logo-img {
   font-size: 54px;
   color: var(--white-color);
-  /* flex: 1; */
+  flex: 1;
 }
 
 .header__search {
@@ -459,11 +459,14 @@
   box-shadow: 0 0 20px #ff0000;
 }
 
+/* .header__search-input-wrap {
+  flex: 1;
+} */
+
 .header__search-input {
   flex: 1;
   height: 100%;
   border: none;
-
   border-top-left-radius: 25px;
   border-bottom-left-radius: 25px;
   font-size: 1.8rem;
@@ -472,7 +475,7 @@
 
 .header__search-input:focus {
   outline: none;
-  box-shadow: 0 0 10px var(--white-color);
+  box-shadow: 0 0 20px var(--white-color);
   transition: 0.2s linear;
 }
 
@@ -538,7 +541,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  width: 150px;
+  width: 145px;
   border-radius: 5px;
   box-shadow: 0 1px 3px #a5a5a5;
   /* Ẩn những con của thẻ cha */
