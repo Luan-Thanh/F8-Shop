@@ -2,6 +2,12 @@
   --white-color: #fff;
   --back-color: #000;
   --text-color: #333;
+  --border-color: #919191;
+
+  /* Tự động tăng giảm kích thước khi chỉnh chìu cao */
+  --header-height: 130px;
+  --navbar-height: 38px;
+  --header-search-height: calc(var(--header-height) - var(--navbar-height));
 }
 
 .btn--no-hover {
@@ -24,6 +30,12 @@
   color: var(--back-color);
 }
 
+.outline-input:focus {
+  outline: none;
+  border-color: #0051fff6;
+  box-shadow: 0 0 4px rgba(0, 81, 255, 0.8);
+}
+
 * {
   box-sizing: inherit;
 }
@@ -39,8 +51,8 @@ html {
 
 /* <==== Responsive ====> */
 .grid {
-  width: 1500px;
-  /* Với những màn hình nhỏ hơn 1200px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
+  width: 1600px;
+  /* Với những màn hình nhỏ hơn 1500px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
   max-width: 100%;
   /* Căn giữa */
   margin: 0 auto;

@@ -23,7 +23,6 @@
       rel="icon"
       href="./assets/img/Logo/logo_github.png"
       type="image/gif"
-      sizes="100x100"
     />
     <title>Github Shop</title>
   </head>
@@ -59,35 +58,37 @@
                   </div>
                 </div>
               </li>
-              <li class="nav__item">
-                <span class="btn--no-hover nav__text"
-                  >Kết nối
-                  <a
-                    href="https://www.facebook.com/luan.thanh.2203"
-                    class="nav__icon-link"
-                  >
-                    <span
-                      class="nav__icon iconify"
-                      data-icon="akar-icons:facebook-fill"
-                    ></span>
-                  </a>
+              <li class="nav__item btn--no-hover">
+                Kết nối
+                <a
+                  href="https://www.facebook.com/luan.thanh.2203"
+                  class="nav__icon-link"
+                >
+                  <span
+                    class="nav__icon iconify"
+                    data-icon="akar-icons:facebook-fill"
+                  ></span>
+                </a>
 
-                  <a
-                    href="https://github.com/Luan-Thanh/Github-Shop"
-                    class="nav__icon-link"
-                  >
-                    <span
-                      class="nav__icon iconify"
-                      data-icon="akar-icons:github-fill"
-                    ></span>
-                  </a>
-                </span>
+                <a
+                  href="https://github.com/Luan-Thanh/Github-Shop"
+                  class="nav__icon-link"
+                >
+                  <span
+                    class="nav__icon iconify"
+                    data-icon="akar-icons:github-fill"
+                  ></span>
+                </a>
               </li>
             </ul>
             <ul class="nav__lists">
               <li class="nav__item show--lists">
-                <a href="" class="nav__item-link">
-                  <i class="nav__icon far fa-bell"></i>Thông Báo</a
+                <a href="#" class="nav__item-link">
+                  <span
+                    class="nav__icon iconify"
+                    data-icon="pepicons:bell"
+                  ></span>
+                  Thông Báo</a
                 >
 
                 <!-- ==== Notify ==== -->
@@ -133,7 +134,7 @@
                           </span>
                           <span class="header__notify-desc">
                             Đã đến lúc không dùng cốc cũ nữa và cập nhật lên cốc
-                            Invertocat 3.0 hoàn toàn mới. Liên tục ...
+                            Invertocat 3.0 hoàn toàn ...
                           </span>
                         </div>
                       </a>
@@ -251,13 +252,79 @@
               </li>
               <li class="nav__item">
                 <a href="" class="nav__item-link">
-                  <i class="nav__icon far fa-question-circle"></i>Trợ Giúp</a
-                >
+                  <span
+                    class="nav__icon iconify"
+                    data-icon="ic:round-help-outline"></span>
+                  Trợ Giúp<a>
               </li>
               <li class="nav__item nav__item--bold nav--separate">Đăng Ký</li>
               <li class="nav__item nav__item--bold">Đăng Nhập</li>
             </ul>
           </nav>
+
+          <!-- Header with search -->
+          <div class="header-with-search">
+            <div class="header__logo">
+              <a href="#" class="header__logo-home">
+                <span
+                  class="header__logo-img iconify"
+                  data-icon="octicon:logo-github-16"
+                ></span>
+              </a>
+            </div>
+
+            <div class="header__search">
+              <input
+                type="text"
+                class="header__search-input"
+                placeholder="Tìm kiếm sản phẩm"
+              />
+
+              <div class="header__select">
+                <span class="header__select-label"> Trong Shop</span>
+                <span
+                  class="header__select-icon iconify"
+                  data-icon="fluent:chevron-down-24-filled"
+                ></span>
+
+                <ul class="header__search-option">
+                  <li class="header__search-option-item">
+                    <span class="header__search-option-status">Trong Shop</span>
+                    <span
+                      class="
+                        header__search-option-icon
+                        option-icon--active
+                        iconify
+                      "
+                      data-icon="emojione-v1:left-check-mark"
+                    ></span>
+                  </li>
+
+                  <li class="header__search-option-item">
+                    <span class="header__search-option-status">Ngoài Shop</span>
+                    <span
+                      class="header__search-option-icon iconify"
+                      data-icon="emojione-v1:left-check-mark"
+                    ></span>
+                  </li>
+                </ul>
+              </div>
+
+              <button class="header__search-btn">
+                <span
+                  class="header__search-btn-icon iconify"
+                  data-icon="ic:round-search"
+                ></span>
+              </button>
+            </div>
+
+            <div class="header__cart">
+              <span
+                class="header__cart-icon iconify"
+                data-icon="heroicons-solid:shopping-cart"
+              ></span>
+            </div>
+          </div>
         </div>
       </header>
 
@@ -269,7 +336,6 @@
       <!-- <==== Footer ====> -->
       <footer class="footer"></footer>
     </div>
-
     <!-- <==== Modal ====> -->
     <!-- Display: None -->
     <div class="modal">
@@ -277,7 +343,7 @@
 
       <div class="modal__body">
         <!-- ==== Resgister form ====-->
-        <div class="auth-form">
+        <!-- <div class="auth-form">
           <div class="auth-form__container">
             <header class="auth-form__header">
               <span
@@ -297,7 +363,7 @@
               <div class="auth-form__group">
                 <input
                   type="email"
-                  class="auth-form__input"
+                  class="auth-form__input outline-input"
                   required
                   placeholder=" "
                 />
@@ -311,7 +377,7 @@
                 <input
                   type="password"
                   required
-                  class="auth-form__input"
+                  class="auth-form__input outline-input"
                   placeholder=" "
                 />
 
@@ -325,7 +391,7 @@
                   type="text"
                   name="username"
                   required
-                  class="auth-form__input"
+                  class="auth-form__input outline-input"
                   placeholder=" "
                 />
 
@@ -399,10 +465,10 @@
               Kết nối với Google
             </a>
           </footer>
-        </div>
+        </div> -->
 
         <!-- ==== Login form ====-->
-        <!-- <div class="auth-form">
+        <div class="auth-form">
           <div class="auth-form__container">
             <header class="auth-form__header">
               <span
@@ -422,7 +488,7 @@
               <div class="auth-form__group">
                 <input
                   type="email"
-                  class="auth-form__input"
+                  class="auth-form__input outline-input"
                   required
                   placeholder=" "
                 />
@@ -436,7 +502,7 @@
                 <input
                   type="password"
                   required
-                  class="auth-form__input"
+                  class="auth-form__input outline-input"
                   placeholder=" "
                 />
 
@@ -509,7 +575,7 @@
               Kết nối với Google
             </a>
           </footer>
-        </div> -->
+        </div>
       </div>
     </div>
   </body>
