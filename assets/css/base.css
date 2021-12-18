@@ -3,6 +3,7 @@
   --back-color: #000;
   --text-color: #555;
   --border-color: #919191;
+  --blue-color: #0011fa;
 
   /* Tự động tăng giảm kích thước khi chỉnh chìu cao */
   --header-height: 130px;
@@ -11,17 +12,17 @@
 }
 
 .btn--no-hover {
-  cursor: default;
-  /* color: var(--white-color); */
+  cursor: default !important;
+  color: var(--white-color) !important;
 }
 
 .text-link {
-  color: #0011fa;
+  color: var(--blue-color);
   text-decoration: none;
 }
 
 .text-link:hover {
-  color: #0011fa;
+  color: var(--blue-color);
   text-decoration: underline;
 }
 
