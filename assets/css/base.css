@@ -3,12 +3,34 @@
   --back-color: #000;
   --text-color: #555;
   --border-color: #919191;
+  --backgruond-color: #f3f3f3;
   --blue-color: #0011fa;
 
   /* Tự động tăng giảm kích thước khi chỉnh chìu cao */
   --header-height: 130px;
   --navbar-height: 38px;
   --header-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+/* Custom Scrollbar (Thanh cuộn kéo) */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Text Selection Color (Đổi màu chữ khi bôi đen)*/
+::selection {
+  color: var(--back-color);
+  background: var(--white-color);
 }
 
 .btn--no-hover {
