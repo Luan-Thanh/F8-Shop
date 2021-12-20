@@ -925,11 +925,11 @@
 .add__container {
   background-color: var(--back-color);
   height: 3000px;
-  margin-top: var(--header-height);
+  margin-top: 160px;
 }
 
 .category {
-  margin: 64px 32px;
+  margin-top: 16px;
   background-color: var(--white-color);
   border-radius: 25px;
   position: fixed;
@@ -992,4 +992,16 @@
   font-weight: 500;
   border-style: 3px solid;
   border-color: var(--blue-color);
+}
+
+.test {
+  color: var(--white-color);
+  font-size: 2rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.test h3 {
+  font-size: 5rem;
+  margin: 32px 0;
 }
