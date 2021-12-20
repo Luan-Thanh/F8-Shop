@@ -6,6 +6,7 @@
   height: 150px;
   padding: 0 32px;
   background: url(https://i.gifer.com/2eSd.gif) var(--back-color);
+  box-shadow: 0 1px 10px #fff;
   z-index: 1;
   position: fixed;
   top: 0;
@@ -933,7 +934,7 @@
   border-radius: 25px;
   position: fixed;
   width: 260px;
-  border: 10px solid rgb(64 64 64);
+  border: 6px solid #858383;
 }
 
 .category__heading {
