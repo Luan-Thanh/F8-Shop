@@ -929,7 +929,7 @@
 }
 
 .category {
-  margin-top: 64px;
+  margin: 64px 32px;
   background-color: var(--white-color);
   border-radius: 25px;
   position: fixed;
