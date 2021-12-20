@@ -7,7 +7,7 @@
   --blue-color: #0011fa;
 
   /* Tự động tăng giảm kích thước khi chỉnh chìu cao */
-  --header-height: 130px;
+  --header-height: 150px;
   --navbar-height: 38px;
   --header-search-height: calc(var(--header-height) - var(--navbar-height));
 }
@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ccc;
+  background: var(--text-color);
   border-radius: 10px;
 }
 
@@ -27,15 +27,9 @@
   background: #aaa;
 }
 
-/* Text Selection Color (Đổi màu chữ khi bôi đen)*/
-::selection {
-  color: var(--back-color);
-  background: var(--white-color);
-}
-
 .btn--no-hover {
   cursor: default !important;
-  color: var(--white-color) !important;
+  color: var(--white-color);
 }
 
 .text-link {
@@ -74,8 +68,8 @@ html {
 
 /* <==== Responsive ====> */
 .grid {
-  width: 1600px;
-  /* Với những màn hình nhỏ hơn 1500px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
+  width: 1700px;
+  /* Với những màn hình nhỏ hơn 1700px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
   max-width: 100%;
   /* Căn giữa */
   margin: 0 auto;
@@ -88,6 +82,20 @@ html {
 .grid__row {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.grid__column-2 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 16.6667%;
+}
+
+.grid__column-10 {
+  padding-left: 12px;
+  padding-right: 12px;
+  width: 83.3334%;
 }
 
 /* <==== Animation ====> */

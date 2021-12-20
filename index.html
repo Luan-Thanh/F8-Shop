@@ -59,7 +59,7 @@
                 </div>
               </li>
               <li class="nav__item btn--no-hover">
-                Kết nối
+                <span class="btn--no-hover">Kết nối</span>
                 <a
                   href="https://www.facebook.com/luan.thanh.2203"
                   class="nav__icon-link"
@@ -309,7 +309,7 @@
                     <a href="#">Đơn mua hàng</a>
                   </li>
 
-                  <li class="nav__user-menu-item">
+                  <li class="nav__user-menu-item nav__user-menu-item--separate">
                     <a href="#">Đăng xuất</a>
                   </li>
                 </ul>
@@ -438,7 +438,7 @@
                   class="header__cart-icon iconify"
                   data-icon="heroicons-solid:shopping-cart"
                 ></span>
-                <span class="header__cart-notify">5</span>
+                <span class="header__cart-notify">8</span>
 
                 <!-- No cart: header__cart-list--no-cart -->
                 <div class="header__cart-list">
@@ -693,8 +693,51 @@
       </header>
 
       <!-- <==== Container ====> -->
-      <div class="container">
-        <div class="grid"></div>
+      <div class="add__container">
+        <div class="grid">
+          <div class="grid__row">
+            <div class="grid__column-2">
+              <nav class="category">
+                <h3 class="category__heading">
+                  <span
+                    class="category__heading-icon iconify"
+                    data-icon="fa-solid:list-ul"
+                  ></span>
+                  Danh mục
+                </h3>
+
+                <!-- category-item--active: arrow right -->
+                <ul class="category-list">
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Nhãn dán</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Sưu tầm</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Đồ gia dụng</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Áo thun</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Áo hoodie</a>
+                  </li>
+
+                  <li class="category-item">
+                    <a href="#" class="category-item__link">Mũ nón</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="grid__column-10"></div>
+          </div>
+        </div>
       </div>
 
       <!-- <==== Footer ====> -->

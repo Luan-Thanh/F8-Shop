@@ -1,17 +1,21 @@
 .main {
+  position: relative;
 }
 
 .header {
   height: 150px;
   padding: 0 32px;
-  background-image: linear-gradient(0, #000, #272b33);
-  box-shadow: 0 2px 20px var(--back-color);
+  background: url(https://i.gifer.com/2eSd.gif) var(--back-color);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 /* <==== Navbar ====> */
 .nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 8px;
 }
 
 .nav__lists {
@@ -56,7 +60,7 @@
   z-index: 1;
   top: calc(100% + 8px);
   right: -8px;
-  padding: 16px;
+  padding: 16px 16px 8px 16px;
   width: 180px;
   background-color: var(--white-color);
   border-radius: 5px;
@@ -104,6 +108,10 @@
   text-decoration: none;
 }
 
+.nav__user-menu-item--separate {
+  border-top: 1px solid var(--border-color);
+}
+
 /* Show Lists*/
 /* Khi hover thẻ li có con là .header__qr thì  sẽ hiện css */
 .show--lists:hover .header__qr {
@@ -137,7 +145,7 @@
 
 .nav__item,
 .nav__item-link {
-  display: inline-block;
+  display: block;
   font-weight: 300;
   font-size: 1.4rem;
   color: var(--white-color);
@@ -165,6 +173,10 @@
 .nav__icon-link {
   text-decoration: none;
   color: var(--white-color);
+}
+
+.nav__icon-link:nth-child(2) {
+  margin-left: 4px;
 }
 
 .nav__icon {
@@ -220,12 +232,11 @@
 .header__notify {
   --growth-from: 0;
   --growth-to: 1;
-  width: 350px;
+  width: 400px;
   right: 0;
   border: 1.5px solid var(--back-color);
-  /* opacity: 0.8; */
   /* Thay đổi tâm */
-  transform-origin: calc(100% - 20px) top;
+  transform-origin: calc(100% - 32px) top;
   animation: growth linear 0.3s;
   /* Khai báo */
   will-change: opacity, transform;
@@ -257,7 +268,7 @@
 }
 
 .header__notify-lists {
-  height: 325px;
+  height: 350px;
   padding-left: 0;
   list-style: none;
   overflow-y: scroll;
@@ -512,6 +523,11 @@
   width: 200px;
   margin-left: 8px;
   margin-right: 32px;
+}
+
+.header__logo-home {
+  color: transparent;
+  text-decoration: none;
 }
 
 .header__logo-img {
@@ -835,9 +851,9 @@
 }
 
 .header__cart-img:hover {
-  width: 70px;
-  height: 70px;
-  transition: width 0.5s, height 0.5s;
+  width: 72px;
+  height: 72px;
+  transition: width 0.2s, height 0.2s linear;
 }
 
 .header__cart-item-info {
@@ -902,4 +918,77 @@
 .header__cart-view-cart {
   margin: 16px 0;
   width: 90%;
+}
+
+/* <===== Add Container =====> */
+.add__container {
+  background-color: var(--back-color);
+  height: 3000px;
+  margin-top: var(--header-height);
+}
+
+.category {
+  margin-top: 64px;
+  background-color: var(--white-color);
+  border-radius: 25px;
+  position: fixed;
+  width: 260px;
+  border: 10px solid rgb(64 64 64);
+}
+
+.category__heading {
+  font-size: 1.8rem;
+  padding: 16px 0;
+  margin: 0 32px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.category__heading-icon {
+  font-size: 1.4rem;
+  margin-right: 4px;
+  position: relative;
+  top: 1.6px;
+}
+
+.category-list {
+  padding: 0 8px 16px 8px;
+  list-style: none;
+  margin-left: 18px;
+}
+
+/* .category-item {
+  border-left: 2px solid var(--back-color);
+  border-radius: 5px;
+}
+
+.category-item--active .category-item__link::before {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  content: "";
+  border: 4px solid red;
+  border-color: transparent transparent transparent #fff;
+  transform: translateY(-50%);
+} */
+
+.category-item__link {
+  position: relative;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: var(--back-color);
+  padding: 8px 16px;
+  right: 0;
+  transition: right linear 0.2s;
+  /* Để padding được */
+  border-left: 2px solid var(--back-color);
+  /* border-radius: 5px; */
+  display: block;
+}
+
+.category-item__link:hover {
+  right: -20px;
+  color: var(--blue-color);
+  font-weight: 500;
+  border-style: 3px solid;
+  border-color: var(--blue-color);
 }
