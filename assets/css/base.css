@@ -1,9 +1,9 @@
 :root {
   --white-color: #fff;
   --back-color: #000;
-  --text-color: #555;
+  --text-color: #242424;
   --border-color: #858383;
-  --backgruond-color: #f3f3f3;
+  --background-color: #f3f3f3;
   --blue-color: #0011fa;
 
   /* Tự động tăng giảm kích thước khi chỉnh chìu cao */
