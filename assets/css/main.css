@@ -924,7 +924,7 @@
 /* <===== Add Container =====> */
 .add__container {
   background-color: var(--back-color);
-  height: 3000px;
+  height: 500 px;
   margin-top: 160px;
 }
 
@@ -932,9 +932,11 @@
   margin-top: 16px;
   background-color: var(--white-color);
   border-radius: 25px;
-  position: fixed;
-  width: 260px;
   border: 6px solid var(--border-color);
+  /* Để tạm */
+  position: sticky;
+  position: -webkit-sticky;
+  top: 176px;
 }
 
 .category__heading {

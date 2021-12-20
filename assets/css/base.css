@@ -68,8 +68,8 @@ html {
 
 /* <==== Responsive ====> */
 .grid {
-  width: 1700px;
-  /* Với những màn hình nhỏ hơn 1700px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
+  width: 1500px;
+  /* Với những màn hình nhỏ hơn 1500px thì max-width sẽ làm cho chiều dài phụ hợp với màn hình */
   max-width: 100%;
   /* Căn giữa */
   margin: 0 auto;
@@ -95,7 +95,7 @@ html {
 .grid__column-10 {
   padding-left: 12px;
   padding-right: 12px;
-  width: 83.3334%;
+  width: 83.3332%;
 }
 
 /* <==== Animation ====> */
