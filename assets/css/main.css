@@ -434,6 +434,7 @@
 }
 
 .auth-form__text {
+  color: var(--back-color);
   font-size: 1.4rem;
   margin: 0;
 }
@@ -928,15 +929,14 @@
   margin-top: 160px;
 }
 
+.add__content {
+  padding-top: 36px;
+}
+
 .category {
-  margin-top: 16px;
   background-color: var(--white-color);
   border-radius: 25px;
   border: 6px solid var(--border-color);
-  /* Để tạm */
-  position: sticky;
-  position: -webkit-sticky;
-  top: 176px;
 }
 
 .category__heading {
@@ -995,15 +995,87 @@
   border-style: 3px solid;
   border-color: var(--blue-color);
 }
-
-.test {
-  color: var(--white-color);
-  font-size: 2rem;
-  line-height: 1.6;
-  text-align: center;
+/* ==== Home sort + filter */
+.home-filter {
+  background-color: var(--white-color);
+  padding: 16px 24px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.test h3 {
-  font-size: 5rem;
-  margin: 32px 0;
+.home-filter__laybel {
+  font-size: 1.6rem;
+  margin-right: 16px;
+}
+
+.home-filter__btn {
+  border: 1px solid var(--text-color);
+  font-size: 1.6rem;
+  margin-right: 12px;
+  min-width: 120px;
+}
+
+.home-filter__btn2 {
+  color: var(--white-color);
+  background-color: var(--back-color);
+}
+
+.home-filter__page {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.home-filter__page-num {
+  font-size: 1.6rem;
+  margin-right: 24px;
+}
+
+.home-filter__page-current {
+  color: var(--blue-color);
+  font-weight: 500;
+}
+
+.home-filter__page-control {
+  width: 100px;
+  height: 48px;
+  border-radius: 25px;
+  box-shadow: 0 1px 3px var(--border-color);
+  display: flex;
+  overflow: hidden;
+}
+
+.home-filter__page-btn {
+  flex: 1;
+  text-decoration: none;
+  color: var(--back-color);
+  /* background-color: #0000001a; */
+  background-image: linear-gradient(180deg, #aaa, #726f6f1a);
+  display: flex;
+}
+
+.home-filter__page-btn:first-child {
+  border-right: 1px solid var(--white-color);
+}
+
+.home-filter__page-btn:hover {
+  color: var(--blue-color);
+  background-color: #aaa;
+}
+
+.home-filter__page-btn--disabled {
+  color: #9b9b9b;
+  background-color: #ffffffcb;
+}
+
+.home-filter__page-btn--disabled:hover {
+  cursor: default;
+  color: #9b9b9b;
+  background-color: #ffffffcb;
+}
+
+.home-filter__page-icon {
+  margin: auto;
+  font-size: 1.6rem;
 }

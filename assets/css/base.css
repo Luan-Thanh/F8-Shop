@@ -19,7 +19,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-color);
+  background: #858383;
   border-radius: 10px;
 }
 
@@ -123,6 +123,7 @@ html {
 /* <===== Modal =====> */
 .modal {
   position: fixed;
+  z-index: 1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -151,15 +152,14 @@ html {
   animation: growth linear 0.4s;
 }
 
-.modal__inner {
-}
-
 /* ==== Authen form ==== */
 .btn {
   border: none;
-  height: 24px;
+  height: 46px;
+  padding: 8px;
   font-size: 1.8rem;
   border-radius: 25px;
+  background-color: var(--white-color);
   text-decoration: none;
 }
 
@@ -167,4 +167,88 @@ html {
   cursor: pointer;
   opacity: 0.8;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+/* Select */
+.select-input {
+  position: relative;
+  min-width: 200px;
+  height: 46px;
+  padding: 8px 24px;
+  border: 1px solid var(--back-color);
+  border-radius: 25px;
+  background-color: var(--white-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select-input__label {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.select-input__icon {
+  font-size: 1.4rem;
+  color: #666;
+  margin-left: 8px;
+  top: 2px;
+}
+
+.select-input__list {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: calc(100% + 4px);
+  border-radius: 25px;
+  list-style: none;
+  background-color: var(--white-color);
+  border: 0.25px solid var(--back-color);
+  box-shadow: 0 1px 3px var(--white-color);
+  margin: 0;
+  padding-left: 0;
+  display: none;
+}
+
+.select-input:hover .select-input__list {
+  display: block;
+  animation: fadeIn linear 0.25s;
+}
+
+.select-input__item {
+  padding: 12px;
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.select-input__item:first-child {
+  padding-top: 22px;
+}
+
+.select-input__item:last-child {
+  border: none;
+  padding-bottom: 22px;
+}
+
+.select-input__link {
+  position: relative;
+  right: 0;
+  text-decoration: none;
+  color: var(--text-color);
+  transition: right linear 0.2s;
+}
+
+.select-input__link:hover {
+  right: -10px;
+  color: var(--blue-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.select-input__check {
+  text-align: left;
 }
