@@ -125,7 +125,7 @@ html {
 }
 
 /* Tablet: width >= 740px and width < 1024px */
-@media (max-width: 63.9375em) {
+@media (max-width: 46.25em) {
   .main {
     display: none;
   }
@@ -194,7 +194,7 @@ html {
   z-index: 1;
   top: 0;
   right: 0;
-  bottom: 0;
+  left: 0;
   bottom: 0;
   display: flex;
   display: none;
@@ -266,14 +266,14 @@ html {
 
 .select-input__list {
   position: absolute;
-  z-index: 2;
-  bottom: 0;
+  z-index: 1;
   right: 0;
   top: calc(100% + 4px);
+  min-width: 200px;
   border-radius: 25px;
   list-style: none;
   color: var(--text-color);
-  background-color: red;
+  background-color: var(--white-color);
   border-top: 0.25px solid var(--back-color);
   box-shadow: 0 1px 3px var(--back-color);
   margin: 0;
@@ -287,6 +287,7 @@ html {
   top: -14px;
   right: 0;
   bottom: 0;
+  min-width: 200px;
   height: 32px;
 }
 
@@ -311,10 +312,10 @@ html {
 }
 
 .select-input__item:first-child {
-  border: none;
   padding-top: 8px;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
+  border: none;
 }
 
 .select-input__item:last-child {
@@ -337,4 +338,52 @@ html {
 .select-input__check {
   margin-right: 18px;
   font-size: 1.6rem;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.pagination-item {
+  margin: 0 16px;
+}
+
+.pagination-item__link {
+  --height: 50px;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--white-color);
+  background-color: rgba(255, 255, 255, 0.4);
+  min-width: 50px;
+  height: var(--height);
+  line-height: var(--height);
+  border-radius: 50%;
+  text-align: center;
+  display: block;
+}
+
+.pagination-item__link:hover {
+  font-size: 2.2rem;
+  font-weight: 500;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.2s linear;
+}
+
+.pagination-item--active .pagination-item__link {
+  background-color: rgba(0, 17, 250, 0.616);
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.pagination-item--active .pagination-item__link:hover {
+  cursor: default;
+}
+
+.pagination-item__icon {
+  position: relative;
+  top: 3px;
 }
