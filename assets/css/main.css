@@ -6,8 +6,8 @@
   padding: 0 32px;
   background: url(https://i.gifer.com/2eSd.gif) var(--back-color);
   box-shadow: 0 1px 10px #fff;
-  z-index: 1;
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -935,13 +935,16 @@
 }
 
 /* <===== Add Container =====> */
-.add__container {
+.app__container {
+  position: relative;
+  left: 0;
+  right: 0;
   background-color: var(--back-color);
   padding: 0 16px;
   margin-top: 160px;
 }
 
-.add__content {
+.app__content {
   padding-top: 36px;
 }
 
@@ -949,6 +952,7 @@
   position: -webkit-sticky;
   position: sticky;
   top: 200px;
+  margin-bottom: 32px;
   background-color: var(--white-color);
   border-radius: 25px;
   border: 6px solid var(--border-color);
@@ -1299,4 +1303,98 @@
 
 /* <==== Footer ====> */
 .footer {
+  padding-top: 16px;
+  border-top: 6px solid var(--blue-color);
+}
+
+.footer__heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+}
+
+.footer-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.footer-item {
+  font-size: 1.4rem;
+
+  /* line-height: 1.8rem; */
+}
+
+.footer-item--email {
+  display: flex;
+  align-items: center;
+}
+
+.footer-item--email .footer-item__link {
+  margin-left: 4px;
+}
+
+.footer-item__link {
+  font-size: 1.4rem;
+  padding: 8px 0;
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-item__link:hover {
+  text-decoration: underline;
+  color: var(--blue-color);
+}
+
+.footer-item__icon {
+  margin-top: -1px;
+  margin-right: 8px;
+  font-size: 1.8rem;
+}
+
+.footer__download {
+  display: flex;
+}
+
+.footer__download-qr {
+  max-width: 120px;
+  object-fit: contain;
+}
+
+.footer__download-apps {
+  margin-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer__download-app-link {
+  color: transparent;
+  text-decoration: none;
+}
+
+.footer__download-app-link:hover {
+  filter: brightness(90%);
+}
+
+.footer__download-app-img {
+  height: 40px;
+}
+
+.footer-bootom {
+  color: var(--white-color);
+  background-color: var(--back-color);
+}
+
+.footer-text {
+  /* position: relative; */
+  margin: 0;
+  padding: 32px 0;
+  font-size: 1.8rem;
+}
+
+.footer-icon {
+  position: relative;
+  top: 3px;
+  font-size: 2rem;
 }
