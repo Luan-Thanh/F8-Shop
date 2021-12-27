@@ -724,7 +724,7 @@
 
 .header__search-history-item a {
   text-decoration: none;
-  line-height: 1.6rem;
+  line-height: 3.4rem;
   height: 3.2rem;
   display: block;
   display: -webkit-box;
@@ -1239,7 +1239,7 @@
   left: -13px;
   font-size: 1.4rem;
   font-weight: 500;
-  line-height: 1.8rem;
+  line-height: 2rem;
   color: #ff2600f8;
   background-color: currentColor;
 }
