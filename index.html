@@ -316,11 +316,18 @@
               </li>
 
               <!-- No Login -->
-              <!-- <li class="nav__item nav__item--bold nav--separate">Đăng Ký</li>
-              <li class="nav__item nav__item--bold">Đăng Nhập</li> -->
+              <li
+                class="nav__item nav__item--bold nav--separate"
+                onclick="modals() , resgister()"
+              >
+                Đăng Ký
+              </li>
+              <li class="nav__item nav__item--bold" onclick="modals(), login()">
+                Đăng Nhập
+              </li>
 
               <!-- Has Login -->
-              <li class="nav__item nav__user">
+              <!-- <li class="nav__item nav__user">
                 <img
                   src="./assets/img/User/user1.png"
                   alt="Avata"
@@ -347,7 +354,7 @@
                     <a href="#">Đăng xuất</a>
                   </li>
                 </ul>
-              </li>
+              </li> -->
             </ul>
           </nav>
 
@@ -443,11 +450,7 @@
                   <li class="header__search-option-item">
                     <span class="header__search-option-status">Trong shop</span>
                     <span
-                      class="
-                        header__search-option-icon
-                        iconify
-                        option-icon--active
-                      "
+                      class="header__search-option-icon iconify option-icon--active"
                       data-icon="emojione-v1:left-check-mark"
                     ></span>
                   </li>
@@ -826,9 +829,7 @@
                   <div class="home-filter__page-control">
                     <a
                       href=""
-                      class="
-                        home-filter__page-btn home-filter__page-btn--disabled
-                      "
+                      class="home-filter__page-btn home-filter__page-btn--disabled"
                     >
                       <span
                         class="home-filter__page-icon iconify"
@@ -875,10 +876,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -974,10 +972,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -1163,10 +1158,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -1355,10 +1347,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -1455,10 +1444,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -1644,10 +1630,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -1833,10 +1816,7 @@
 
                       <div class="home-product-item__action">
                         <span
-                          class="
-                            home-product-item__like
-                            home-product-item__like-liked
-                          "
+                          class="home-product-item__like home-product-item__like-liked"
                         >
                           <span
                             class="home-product-item__like-empty iconify"
@@ -2222,12 +2202,12 @@
     </div>
     <!-- <==== Modal ====> -->
     <!-- Display: None -->
-    <div class="modal">
+    <div id="modals" class="modal">
       <div class="modal__overlay"></div>
 
       <div class="modal__body">
         <!-- ==== Resgister form ====-->
-        <div class="auth-form">
+        <div id="resgister" class="auth-form resgister-form">
           <div class="auth-form__container">
             <header class="auth-form__header">
               <span
@@ -2352,7 +2332,7 @@
         </div>
 
         <!-- ==== Login form ====-->
-        <!-- <div class="auth-form">
+        <div id="login" class="auth-form login-form">
           <div class="auth-form__container">
             <header class="auth-form__header">
               <span
@@ -2403,7 +2383,7 @@
               </div>
               <span class="auth-form__sparate"> </span>
               <div>
-                <a href="" class="auth-form__switch-btn text-link"> Đăng Ký</a>
+                <a href="" class="auth-form__switch-btn text-link">Đăng Ký</a>
               </div>
             </div>
 
@@ -2459,7 +2439,7 @@
               Kết nối với Google
             </a>
           </footer>
-        </div> -->
+        </div>
       </div>
     </div>
 
@@ -2469,4 +2449,5 @@
     </div>
   </body>
   <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+  <script src="./assets/script/main.js"></script>
 </html>

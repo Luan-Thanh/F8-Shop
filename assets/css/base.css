@@ -226,6 +226,11 @@ html {
   animation: growth linear 0.4s;
 }
 
+.resgister-form,
+.login-form {
+  display: none;
+}
+
 /* ==== Authen form ==== */
 .btn {
   border: none;
