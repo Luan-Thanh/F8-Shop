@@ -405,7 +405,7 @@ html {
 }
 
 /* Tablet & Mobile */
-/* @media (max-width: 63.9375em) {
+@media (max-width: 63.9375em) {
   .grid__column-10-2 {
     padding-left: 12px;
     padding-right: 12px;
@@ -417,10 +417,20 @@ html {
     width: 0;
   }
 
+  .app__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .category {
     display: none;
   }
-} */
+
+  .home-filter {
+    flex-wrap: wrap;
+  }
+}
 /* Tablet */
 @media (min-with: 46.25em) and (max-with: 63.9375em) {
 }
