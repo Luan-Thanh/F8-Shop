@@ -131,7 +131,7 @@ html {
 }
 
 /* Tablet: width >= 740px and width < 1024px */
-/* @media (max-width: 46.25em) {
+@media (max-width: 46.25em) {
   .main {
     display: none;
   }
@@ -142,9 +142,9 @@ html {
     justify-content: center;
     text-align: center;
   }
-} */
+}
 
-/* @keyframes example {
+@keyframes example {
   0% {
     background-color: rgba(255, 0, 0, 0.288);
     bottom: 200px;
@@ -170,7 +170,7 @@ html {
     bottom: 200px;
     top: -100px;
   }
-} */
+}
 
 /* <==== Animation ====> */
 @keyframes fadeIn {
@@ -224,6 +224,11 @@ html {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4), 0 0 10px rgba(0, 0, 0, 0.4) inset;
   z-index: 1;
   animation: growth linear 0.4s;
+}
+
+.resgister-form,
+.login-form {
+  display: none;
 }
 
 /* ==== Authen form ==== */
@@ -410,6 +415,12 @@ html {
   .grid__column-2 {
     padding: 0;
     width: 0;
+  }
+
+  .app__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .category {
